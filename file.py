@@ -14,3 +14,4 @@ tmpdaa = Test()
 with open("a-file.pickle",'wb') as f:
     pickle.dump(tmpdaa,f)
 numpy.load('a-file.pickle')
+print("Hello World!")
